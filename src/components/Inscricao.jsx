@@ -29,16 +29,16 @@ function Inscricao() {
   }
 
   return (
-    
+
     <section id="inscricao" className="bg-linear-to-b from-[#eff6ff] to-[#dc2626]/20 py-20 px-4 text-center border-b border-orange-200">
       <div className="max-w-md mx-auto bg-white p-8 rounded-xl shadow-md border border-orange-100">
         <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">Garanta sua vaga nas Aulas-Show</h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-5">
           <label className="flex flex-col gap-1 text-gray-700 font-medium">
             Nome Completo
-            <input 
-              type="text" 
-              required 
+            <input
+              type="text"
+              required
               value={nome}
               onChange={(e) => setNome(e.target.value)}
               className="mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaria"
@@ -48,9 +48,9 @@ function Inscricao() {
 
           <label className="flex flex-col gap-1 text-gray-700 font-medium">
             E-mail
-            <input 
-              type="email" 
-              required 
+            <input
+              type="email"
+              required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaria"
@@ -60,7 +60,7 @@ function Inscricao() {
 
           <label className="flex flex-col gap-1 text-gray-700 font-medium">
             Tipo de Ingresso
-            <select 
+            <select
               value={ingresso}
               onChange={(e) => setIngresso(e.target.value)}
               className="mt-1 p-3 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primaria"
@@ -73,7 +73,7 @@ function Inscricao() {
             </select>
           </label>
 
-          <button type="submit" className="bg-primaria hover:bg-red-700 text-white font-bold p-4 rounded-lg shadow mt-2 transition-colors cursor-pointer">
+          <button type="submit" className="bg-primaria hover:bg-[#A62B41] text-white font-bold p-4 rounded-lg shadow mt-2 transition-colors cursor-pointer">
             Realizar Inscrição
           </button>
         </form>

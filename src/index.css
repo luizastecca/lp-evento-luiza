@@ -2,7 +2,8 @@
 
 @theme {
 --color-primaria: #00008B;;
---color-destaque: #DC2626;
+--color-destaque: #A62B41 ; 
+/* antes a color-destaque era #DC2626 */
 --color-fundo:  #d7ebf1 ;
 }
 
