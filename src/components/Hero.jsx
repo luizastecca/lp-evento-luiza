@@ -17,7 +17,7 @@ function Hero() {
         <p className="text-gray-500 text-xs mt-1">{evento.local}</p>
       </div>
       <div>
-        <a href="#inscricao" className="inline-block bg-primaria hover:bg-[#A62B41] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-md transition-transform hover:scale-105">
+        <a href="#inscricao" className="inline-block bg-primaria hover:bg-destaque text-white font-bold text-lg px-8 py-4 rounded-lg shadow-md transition-transform hover:scale-105">
           Garantir Meu Ingresso
         </a>
       </div>

@@ -1,12 +1,17 @@
 @import "tailwindcss";
 
 @theme {
---color-primaria: #00008B;;
---color-destaque: #A62B41 ; 
-/* antes a color-destaque era #DC2626 */
+--color-primaria: #00008B;
+--color-destaque: #700F1A; 
+/* antes a color-destaque era #A62B41 */
 --color-fundo:  #d7ebf1 ;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+:focus-visible {
+  outline: 3px solid #facc15 !important; /* Amarelo vivo para contrastar com fundos escuros ou o vinho */
+  outline-offset: 3px;
 }
