@@ -39,16 +39,29 @@ function BotaoLembrete() {
   }
 
   return (
-    <div className="mt-6">
+    <div className="w-full sm:w-auto flex flex-col items-center sm:items-start">
       <button
         type="button"
         onClick={ativarLembrete}
-        className="rounded-lg bg-primaria px-5 py-2.5 font-semibold text-white transition hover:opacity-90"
+        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-transparent border-[1.5px] border-primaria px-7 py-[14.5px] text-base font-semibold text-primaria transition-all duration-250 hover:bg-primaria/5 cursor-pointer"
       >
+        <svg
+          className="w-4 h-4 shrink-0"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+          <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+        </svg>
         Me lembre do evento
       </button>
       {mensagem && (
-        <p role="status" className="mt-2">
+        <p role="status" className="mt-2 text-sm text-texto font-medium">
           {mensagem}
         </p>
       )}

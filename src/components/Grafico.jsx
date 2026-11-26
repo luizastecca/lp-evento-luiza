@@ -22,15 +22,15 @@ function Grafico() {
       const largura = (item.valor / maior) * 220; // a maior barra tem 220px
       const y = 20 + i * 50; // cada barra 50px abaixo da anterior
 
-      // 1. escolha a cor da barra (azul escuro do seu evento)
-      ctx.fillStyle = "#00008B";
+      // 1. escolha a cor da barra (azul marinho do seu evento)
+      ctx.fillStyle = "#0A1172";
 
       // 2. desenhe a barra com fillRect, começando em x = 110
       ctx.fillRect(110, y, largura, 30);
 
       // 3. troque a cor para escuro e escreva o rótulo em x = 10
-      ctx.fillStyle = "#1f2937";
-      ctx.font = "14px sans-serif";
+      ctx.fillStyle = "#2D3142";
+      ctx.font = "600 14px 'Plus Jakarta Sans', sans-serif";
       ctx.fillText(item.rotulo, 10, y + 20);
 
       // 4. escreva o valor logo depois do fim da barra
@@ -39,16 +39,25 @@ function Grafico() {
   }, []);
 
   return (
-    <section className="px-4 py-16 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-primaria">Título do gráfico</h2>
-      <canvas
-        ref={canvasRef}
-        width={380}
-        height={170}
-        role="img"
-        aria-label="Gráfico de barras mostrando Item A com 120, Item B com 80 e Item C com 45"
-        className="mt-6 max-w-full"
-      />
+    <section className="py-20 px-6 bg-white border-b border-[rgba(10,17,114,0.08)]">
+      <div className="max-w-[1140px] mx-auto">
+        <div className="max-w-2xl mx-auto bg-fundo p-8 rounded-xl border border-[rgba(10,17,114,0.12)] shadow-editorial">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-destaque mb-2">
+            Panorama
+          </p>
+          <h2 className="font-serif text-3xl font-bold text-primaria tracking-[-0.02em]">
+            Título do gráfico
+          </h2>
+          <canvas
+            ref={canvasRef}
+            width={380}
+            height={170}
+            role="img"
+            aria-label="Gráfico de barras mostrando Entrada com 320, Aula-show com 145 e Passaporte com 500"
+            className="mt-6 max-w-full"
+          />
+        </div>
+      </div>
     </section>
   );
 }
